@@ -8,8 +8,8 @@ import os
 st.set_page_config(page_title="Interatieve Wereldkaart met DMC Data", layout="wide")
 
 # --- Pad naar bestanden ---
-EXCEL_PATH = r"C:\Users\rafie\.vscode\Programs\Python\DMCMap.xlsx"
-SHAPE_PATH = r"C:\Users\rafie\.vscode\Programs\Python\ne_110m_admin_0_countries.shp"
+EXCEL_PATH = r"DMCMap.xlsx"
+SHAPE_PATH = r"ne_110m_admin_0_countries.shp"
 
 # --- Data laden (alleen Land + kolommen C–H, en alleen rijen t/m 41) ---
 df = pd.read_excel(EXCEL_PATH, usecols="B:H", nrows=41)
@@ -187,3 +187,4 @@ m.get_root().html.add_child(folium.Element(legend_html))
 
 # --- Tonen in Streamlit ---
 st_data = st_folium(m, width=1920, height=1080)
+
