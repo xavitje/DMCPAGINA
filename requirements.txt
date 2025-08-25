@@ -1,8 +1,12 @@
-# Gebruik versies met prebuilt wheels voor Python 3.11
-pandas==2.0.3
-geopandas>=0.13.0
+# Versies met prebuilt wheels voor Python 3.11
+pip>=25.2
+setuptools>=68.0.0
+wheel
+
 numpy>=1.24.0
+pandas==2.0.3
 shapely>=2.0.1
 fiona>=1.9.0
 pyproj>=3.5.0
 rtree>=1.0.0
+geopandas>=0.13.0
